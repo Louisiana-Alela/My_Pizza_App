@@ -97,7 +97,11 @@
                                     <input type="checkbox" class="toppings" name="Toppings" id="Bacon" value="100" />
                                     Bacon <br />
                                     <input type="checkbox" class="toppings" name="Toppings" id="pepper" value="50" />
-                                    Green Peppers
+                                    Green Peppers<br />
+                                    <input type="checkbox" class="toppings" name="Toppings" id="pineapple"
+                                        value="120" />
+                                    Pineapple
+
 
                                     <br />
                                     <label for="Toppings">Crust</label><br />
@@ -105,10 +109,10 @@
                                     Crispy
                                     <input type="checkbox" class="crust" name="crust" id="stuffed" value="150" />
                                     Stuffed<br />
-                                    <input type="checkbox" class="crust" name="crust" id="gluten" value="50" />
+                                    <input type="checkbox" class="crust" name="crust" id="gluten" value="100" />
                                     Gluten free <br />
 
-                                    <label for="Number">How many ?</label><br />
+                                    <label for="Number">How many pizzas?</label><br />
                                     <input type="number" name="quantity" id="quantity" value="1" min="1" />
                                     <br />
 
@@ -132,6 +136,76 @@
             </div>
         </div>
     </div>
+
+    <div class="checkout">
+        <div class="conatainer">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 ">
+                    <img src="images/delivery.jpg" alt="chef" class="img-fluid" />
+                </div>
+                <div class="col-lg-7 col-md-12 order-md-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Checkout</h4>
+                            <br />
+                            <div class="list" id="list">
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <td>Pizza</td>
+                                            <td>Size</td>
+                                            <td>Toppings</td>
+                                            <td>Crust</td>
+                                            <td>TOTAL</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <h5>Cost: <span class="value"></span></h5>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark" data-toggle="modal"
+                                    data-target="#exampleModalLong">
+                                    Pick Up
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                    Pizza Palace
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Your Pizza will be ready in Twenty Minutes
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="button" class="btn btn-primary">
+                                                    Add pizza
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-warning" onclick="deliver()">Delivery</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="./app.js"></script>
 </body>
