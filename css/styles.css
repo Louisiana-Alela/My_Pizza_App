@@ -24,3 +24,47 @@
 }
 
 /* pizza order page styles */
+#menu{
+    font-family: 'Kalam' , cursive;
+    font-weight: 700;
+}
+
+.card{
+    overflow: hidden;
+}
+
+.card-title{
+    font-family: 'Kalam';
+    font-size: 30px;
+    color: darkred;
+}
+
+#pizzatitle{
+    font-family: 'Kalam';
+    font-family: 700;
+    font-weight: 800;
+    color: darkred;
+}
+
+.toppings p{
+    font-family: 'Kalam' , cursive;
+    font-weight: 700;
+}
+
+.theInputs label{
+    font-family: 'Kalam';
+    font-weight: 700;
+}
+
+.theInputs input{
+    margin: 15px;
+}
+
+.checking-out{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checking-out h4{
+    font-weight: 700;
+}
